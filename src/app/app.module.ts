@@ -12,6 +12,10 @@ import { AddComponent } from './add/add.component';
 import { NguiAutoCompleteModule } from '@ngui/auto-complete';
 import { environment } from '../environments/environment';
 import { AngularFireLite } from 'angularfire-lite';
+import { LoginComponent } from './login/login.component';
+import { SignupComponent } from './signup/signup.component';
+import { FormsModule } from '@angular/forms';
+import { ErrorComponent } from './ui/error/error.component';
 
 @NgModule({
   declarations: [
@@ -20,13 +24,17 @@ import { AngularFireLite } from 'angularfire-lite';
     WeatherCardComponent,
     AddCardComponent,
     DetailsComponent,
-    AddComponent
+    AddComponent,
+    LoginComponent,
+    SignupComponent,
+    ErrorComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
     NguiAutoCompleteModule,
+    FormsModule,
     AngularFireLite.forRoot(environment.config)
   ],
   providers: [],
