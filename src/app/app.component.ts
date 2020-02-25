@@ -24,7 +24,6 @@ export class AppComponent implements OnInit, OnDestroy {
     this.sub1 = this.ui.darkModeState.subscribe((value) => {
       this.darkModeActive = value;
     });
-
     this.fb.auth.userData().subscribe((user) => {
       this.userEmail = user.email;
     });
