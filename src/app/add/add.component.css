@@ -12,7 +12,7 @@
   background-color: #fff;
   border-radius: 1rem;
   display: flex;
-  margin-top: -4rem;
+  margin-top: 2rem;
 }
 
 .add-city-btn {
@@ -114,7 +114,6 @@
 }
 
 .fav-city-image {
-  ;
   position: absolute;
   right: 0;
   bottom: 0;
@@ -311,7 +310,7 @@ app-weather-card {
   background-color: #fff;
   border-radius: 1rem;
   display: flex;
-  margin-top: -4rem;
+  margin-top: 2rem;
 }
 
 .add-city-btn {
@@ -413,7 +412,6 @@ app-weather-card {
 }
 
 .fav-city-image {
-  ;
   position: absolute;
   right: 0;
   bottom: 0;

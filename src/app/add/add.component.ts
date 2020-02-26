@@ -21,12 +21,16 @@ export class AddComponent implements OnInit, OnDestroy {
   showNote = false;
   followedCM = false;
   sub1: Subscription;
+  todayDate;
 
   constructor(public http: HttpClient,
               public weather: WeatherService,
               public fb: FbService) { }
 
   ngOnInit(): void {
+
+    this.todayDate = new Date().toDateString();
+
     this.weather.getWeather(this.city).subscribe((payload: any) => {
       this.state = payload.weather[0].main;
       this.temp = Math.ceil(Number(payload.main.temp));
