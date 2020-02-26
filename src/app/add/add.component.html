@@ -9,7 +9,7 @@
         <div class="search-city-input-wrapper">
           <input class="search-city-input" auto-complete-placeholder="search city" placeholder="search city"
             auto-complete [(ngModel)]="selectedCity" (keyup.enter)="selectCity(input.value)"
-            (ngModelChange)="selectCity(input.value)" [source]="capitals" [max-num-list]="5" [close-on-focusout]="false"
+            (ngModelChange)="selectCity(input.value)" [source]="capitals" [max-num-list]="5" [close-on-focusout]="true"
             #input />
           <button class="search-city-btn" (click)="selectCity(input.value)">
             <svg class="search-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 451 451">

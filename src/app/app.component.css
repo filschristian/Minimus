@@ -1,6 +1,7 @@
 .root__container {
   width: 100vw;
-  height: 100vh;
+  min-height: 100vh;
+  height: auto;
   display: grid;
   grid-template-columns: auto;
   grid-template-rows: 0.5fr auto;
@@ -291,6 +292,10 @@
 
 .copyright__text {
   letter-spacing: 0.1rem;
+  color: black;
+}
+
+.copyright__text-dark {
   color: white;
 }
 
