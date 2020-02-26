@@ -58,8 +58,6 @@ export class WeatherCardComponent implements OnInit, OnDestroy {
   errorMessage: string;
   cityName;
   cityAdded = false;
-  condition = 'Storm';
-  currentTemp = '20';
   constructor(public weather: WeatherService,
               public router: Router,
               public ui: UiService,

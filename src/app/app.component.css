@@ -81,7 +81,7 @@
   display: grid;
   grid-template-rows: 1fr 4fr;
   grid-template-columns: 1fr 4fr;
-  grid-template-areas: "greeting greeting" "image details";
+  grid-template-areas: "greeting greeting""image details";
   box-sizing: border-box;
   width: 100%;
   align-content: center;
