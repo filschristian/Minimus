@@ -25,7 +25,7 @@
       <div class="city-search-body">
         <span *ngIf="showNote" class="city-invalid-note">City name is not valid. Note: only capital cities are supported
           for now</span>
-        <app-weather-card (cityStored)="selectedCity = ''" *ngIf="cardCity" [city]="cardCity" [addMode]="true">
+        <app-weather-card (cityStored)="onCityStored()" *ngIf="cardCity" [city]="cardCity" [addMode]="true">
         </app-weather-card>
       </div>
 

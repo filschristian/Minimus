@@ -8,6 +8,11 @@
   position: relative;
 }
 
+.root__container-dark {
+  /*background: linear-gradient(to top, #30cfd0 0%, #330867 100%);*/
+  background: linear-gradient(to bottom, #372865, #000000);
+}
+
 /*
 ================
     Header
@@ -76,6 +81,10 @@
   transform: none;
 }
 
+.slide-menu-dark {
+  background-color: #2B244D;
+}
+
 .menu-header {
   background: linear-gradient(to right, #00FF9B, #5f84fb);
   display: grid;
@@ -122,6 +131,29 @@
   width: 100%;
 }
 
+.menu-links {
+  display: flex;
+  flex-flow: column;
+  list-style: none;
+}
+
+.menu-links-dark {
+  color: white;
+}
+
+.link-active {
+  color: #495CFC;
+  border-bottom: 1px solid #495CFC;
+}
+
+.menu-link {
+  outline: none;
+  font-size: 1rem;
+  padding: 1rem 0;
+  margin: 0.5rem 0;
+  cursor: pointer;
+}
+
 .profile-image__container {
   grid-area: image;
   margin-right: 0.5rem;
@@ -163,7 +195,7 @@
 .toggle-button__container {
   cursor: pointer;
   position: relative;
-  margin: 0 0.5rem;
+  margin: 0 0.8rem;
 }
 
 .mode-toggle__input {

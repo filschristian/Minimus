@@ -7,8 +7,9 @@ import { BehaviorSubject } from 'rxjs';
 export class UiService {
 
   darkModeState: BehaviorSubject<boolean>;
-
+  savedState: string;
   constructor() {
-    this.darkModeState = new BehaviorSubject<boolean>(false);
+    this.savedState = localStorage.getItem('darkModeState');
+    this.darkModeState = new BehaviorSubject<boolean>(JSON.parse(this.savedState));
   }
 }

@@ -27,7 +27,6 @@ export class AppComponent implements OnInit, OnDestroy {
     this.fb.auth.userData().subscribe((user) => {
       this.userEmail = user.email;
     });
-
   }
 
   toggleMenu() {
@@ -35,6 +34,7 @@ export class AppComponent implements OnInit, OnDestroy {
   }
 
   modeToggleSwitch() {
+    localStorage.setItem('darkModeState', `${!this.darkModeActive}`);
     this.ui.darkModeState.next(!this.darkModeActive);
   }
 

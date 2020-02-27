@@ -71,6 +71,11 @@ export class AddComponent implements OnInit, OnDestroy {
 
   }
 
+  onCityStored() {
+    this.selectedCity = '';
+    setTimeout(() => this.cardCity = false, 2000);
+  }
+
   ngOnDestroy() {
     this.sub1.unsubscribe();
   }
