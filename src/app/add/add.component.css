@@ -7,7 +7,7 @@
 
 
 .main-card {
-  height: 87vh;
+  height: 75vh;
   width: 90vw;
   background-color: #fff;
   border-radius: 1rem;
@@ -305,7 +305,7 @@ app-weather-card {
 
 
 .main-card {
-  height: 87vh;
+  height: 75vh;
   width: 90vw;
   background-color: #fff;
   border-radius: 1rem;
