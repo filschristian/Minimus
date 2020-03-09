@@ -17,8 +17,13 @@ export class AppComponent implements OnInit, OnDestroy {
   constructor(public ui: UiService, public fb: FbService, public router: Router) {
   }
 
-  loggedIn = this.fb.isAuth();
+  loggedIn = this.checkLoginStatus();
   sub1;
+
+  checkLoginStatus() {
+    return this.fb.isAuth();
+  }
+
 
   ngOnInit() {
     this.sub1 = this.ui.darkModeState.subscribe((value) => {
@@ -46,6 +51,7 @@ export class AppComponent implements OnInit, OnDestroy {
     this.toggleMenu();
     this.router.navigateByUrl('/login');
     this.fb.auth.signout();
+    this.loggedIn = this.checkLoginStatus();
   }
 
 }

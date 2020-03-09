@@ -1,6 +1,6 @@
 .main__container {
   min-height: 90vh;
-  width: 90vw;
+  min-width: 90vw;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -134,12 +134,12 @@
 }
 
 
-.signup-link-wrapper {
+.login-link-wrapper {
   margin-top: 3rem;
   animation: slideup 1s ease-in-out;
 }
 
-.signup-link {
+.login-link {
   text-transform: uppercase;
   margin-top: 1rem;
   text-decoration: none;

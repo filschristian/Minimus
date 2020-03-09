@@ -10,6 +10,6 @@ export class UiService {
   savedState: string;
   constructor() {
     this.savedState = localStorage.getItem('darkModeState');
-    this.darkModeState = new BehaviorSubject<boolean>(JSON.parse(this.savedState));
+    this.darkModeState = new BehaviorSubject<boolean>(JSON.parse(this.savedState) || false);
   }
 }
