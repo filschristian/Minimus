@@ -16,6 +16,7 @@ import { LoginComponent } from './login/login.component';
 import { SignupComponent } from './signup/signup.component';
 import { FormsModule } from '@angular/forms';
 import { ErrorComponent } from './ui/error/error.component';
+import { ServiceWorkerModule } from '@angular/service-worker';
 
 @NgModule({
   declarations: [
@@ -35,7 +36,8 @@ import { ErrorComponent } from './ui/error/error.component';
     HttpClientModule,
     NguiAutoCompleteModule,
     FormsModule,
-    AngularFireLite.forRoot(environment.config)
+    AngularFireLite.forRoot(environment.config),
+    ServiceWorkerModule.register('ngsw-worker.js', { enabled: environment.production })
   ],
   providers: [],
   bootstrap: [AppComponent]
