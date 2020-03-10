@@ -341,3 +341,9 @@
     width: 100%;
   }
 }
+
+@media only screen and (max-width: 600px) {
+  .date__text {
+    visibility: hidden;
+  }
+}
